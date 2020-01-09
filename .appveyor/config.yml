@@ -14,7 +14,7 @@ environment:
     - nodejs_version: 10
 
 install:
-  # Install Android SDK Tools
+  # Install ios SDK Tools
   - mkdir "%ANDROID_HOME%"
   - appveyor DownloadFile "%SDK_TOOLS_URL%" -FileName "%TMP%/sdk-tools.zip"
   - 7z x "%TMP%/sdk-tools.zip" -o"%ANDROID_HOME%" > nul
